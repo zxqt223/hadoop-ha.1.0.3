@@ -9,8 +9,8 @@
 	</property>
 	<property>
 	  <name>ha.zookeeper.timeout</name>
-	  <value>10000</value>
-	  <description>job tracker and avatarnode connect zookeeper timeout,unit is millisecond</description>
+	  <value>10</value>
+	  <description>job tracker and avatarnode connect zookeeper timeout,unit is second</description>
 	</property>
 	<property>
 	  <name>jobtracker.zookeeper.root.node.name</name>
