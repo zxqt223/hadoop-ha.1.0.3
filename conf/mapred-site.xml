@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+<property>
+  <name>jobtracker.servers</name>
+  <value>192.168.0.3:30001,192.168.0.4:30001</value>
+  <description>job tracker server address</description>
+</property>
+<property>
+    <name>mapred.job.tracker</name>
+    <value></value>
+  </property>
+<property>
+  <name>mapred.local.dir</name>
+  <value>/hadoop.tmp/mr</value>
+</property>
+<property>
+  <name>mapred.tasktracker.cgroup</name>
+  <value>-g memory:hadoop-node/default</value>
+</property>
+<property>
+  <name>mapred.job.tracker.persist.jobstatus.hours</name>
+  <value>1</value>
+  <description>The number of hours job status information is persisted in DFS.
+    The job status information will be available after it drops of the memory
+    queue and between jobtracker restarts. With a zero value the job status
+    information is not persisted at all in DFS.
+  </description>
+</property>
+<property>
+    <name>mapred.job.tracker.persist.jobstatus.active</name>
+    <value>true</value>
+    <description>Indicates if persistency of job status information is
+      active or not.
+    </description>
+  </property>
+<property>
+  <name>mapred.jobtracker.restart.recover</name>
+  <value>true</value>
+  <description>"true" to enable (job) recovery upon restart,
+               "false" to start afresh
+  </description>
+</property>
+
+<property>
+  <name>hadoop.job.history.location</name>
+  <value>/hadoop.tmp/job.history</value>
+  <description> If job tracker is static the history files are stored
+  in this single well known place. If No value is set here, by default,
+  it is in the local file system at ${hadoop.log.dir}/history.
+  </description>
+</property>
+<!-- 
+<property>
+  <name>mapred.mapper.new-api</name>
+  <value>true</value> 
+</property>
+-->
+<!-- 
+<property>
+  <name>mapred.job.tracker.history.completed.location</name>
+  <value>/hadoop.tmp/job.history/done</value>
+</property>
+-->
+<property>
+  <name>mapred.system.dir</name>
+  <value>/hadoop.tmp/mapred.system</value>
+</property>
+<property>
+  <name>mapred.child.java.opts</name>
+  <value>-Xmx800m</value>
+</property>
+<property>
+  <name>mapred.min.split.size</name>
+  <value>1073741824</value>
+</property>
+</configuration>

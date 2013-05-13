@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+	<property>
+	  <name>dfs.name.dir</name>
+	  <value>/hadoop/01/avatar/dfs.name.dir/name</value>
+	</property>
+	<property>
+	  <name>dfs.name.edits.dir</name>
+	  <value>/hadoop/01/avatar/dfs.name.dir/edits</value>
+	</property>
+	<property>
+	  <name>dfs.data.dir</name>
+	  <value>/hadoop/01/avatar/dfs.data</value>
+	</property>
+	<property>
+	  <name>dfs.http.address</name>
+	  <value>ha:50070</value>
+	</property>
+	<property>
+	  <name>dfs.http.address0</name>
+	  <value>nn0_host:50070</value>
+	</property>
+	<property>
+	  <name>dfs.http.address1</name>
+	  <value>nn1_host:50070</value>
+	</property>
+	<property>
+	  <name>dfs.name.dir.shared0</name>
+	  <value>/hadoop/01/avatar/shared/image0</value>
+	</property>
+	<property>
+	  <name>dfs.name.dir.shared1</name>
+	  <value>/hadoop/01/avatar/shared/image1</value>
+	  </property>
+	<property>
+	  <name>dfs.name.edits.dir.shared0</name>
+	  <value>/hadoop/01/avatar/shared/edits0</value>
+	</property>
+	<property>
+	  <name>dfs.name.edits.dir.shared1</name>
+	  <value>/hadoop/01/avatar/shared/edits1</value>
+	</property>
+	<property>
+	  <name>dfs.support.append</name>
+	  <value>true</value>
+	</property>
+</configuration>

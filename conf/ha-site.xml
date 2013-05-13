@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+	<property>
+	  <name>ha.zookeeper.quorum</name>
+	  <value>192.168.0.10:2222,192.168.0.11:2222,192.168.0.12:2222</value>
+	  <description>job tracker and name node  connect zookeeper address</description>
+	</property>
+	<property>
+	  <name>ha.zookeeper.timeout</name>
+	  <value>10000</value>
+	  <description>job tracker and avatarnode connect zookeeper timeout,unit is millisecond</description>
+	</property>
+	<property>
+	  <name>jobtracker.zookeeper.root.node.name</name>
+	  <value>/jobtracker</value>
+	  <description> should create the /jobtracker node in the zookeeper cluster </description>
+	</property>
+	<property>
+	  <name>hdfs.zookeeper.root.node.name</name>
+	  <value>/hdfs</value>
+	  <description> should create the /hdfs/namenodes nodes in the zookeeper cluster </description>
+	</property>
+	
+</configuration>
